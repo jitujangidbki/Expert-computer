@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Courses | एक्सपर्ट कंप्यूटर इंस्टिट्यूट</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="preloader"><div class="loader-icon"></div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <header>
         <div class="container">
             <a href="index.html" class="logo">एक्सपर्ट कंप्यूटर</a>
@@ -27,7 +27,6 @@
             <button class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></button>
         </div>
     </header>
-
     <div class="mobile-nav" id="mobile-nav">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
@@ -35,27 +34,22 @@
         <a href="university.html" class="active">University</a>
         <a href="contact.html">Contact</a>
     </div>
-    
-    <section class="page-header">
-        <h1>यूनिवर्सिटी कोर्सेस</h1>
-    </section>
-
+    <section class="page-header"><h1 class="animate-on-scroll fade-in-up">यूनिवर्सिटी कोर्सेस</h1></section>
     <section id="university">
         <div class="container text-center">
-            <p class="sub-title" style="font-size: 1.2rem; color: var(--text-color); margin-top:0; margin-bottom: 30px;">संबद्ध: University of Technology</p>
-            <div class="university-admission-banner">
-                <i class="fas fa-university"></i>
-                <h3>Admission Open: 2025–2026</h3>
+            <p class="sub-title animate-on-scroll fade-in-up" style="font-size: 1.2rem; color: var(--text-color); margin-top:0; margin-bottom: 30px;">संबद्ध: University of Technology</p>
+            <div class="university-admission-banner animate-on-scroll zoom-in" style="transition-delay: 0.2s;">
+                <i class="fas fa-university"></i><h3>Admission Open: 2025–2026</h3>
             </div>
             <div class="university-courses-grid">
-                <div class="course-category animate-on-scroll">
+                <div class="course-category animate-on-scroll slide-in-left" style="transition-delay: 0.4s;">
                     <h4>UG Courses</h4>
                     <ul>
                         <li>BA, B.Sc., B.Com</li>
                         <li>BCA, BBA, B.Tech</li>
                     </ul>
                 </div>
-                <div class="course-category animate-on-scroll">
+                <div class="course-category animate-on-scroll slide-in-right" style="transition-delay: 0.4s;">
                     <h4>PG Courses</h4>
                     <ul>
                         <li>MA, M.Sc., M.Com</li>
@@ -65,13 +59,9 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="container text-center">
-            <p>© 2025 Expert Computer Institute. All Rights Reserved.</p>
-        </div>
+        <div class="container text-center"><p>© 2025 Expert Computer Institute. All Rights Reserved.</p></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
-</html>
+            </html>
