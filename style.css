@@ -3,7 +3,7 @@
     --primary-color: #4a148c; /* Deep Purple */
     --secondary-color: #ff8f00; /* Vibrant Orange/Gold */
     --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --dark-color: #000000;
     --text-color: #555;
     --white-color: #ffffff;
     --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -101,9 +101,29 @@ section { padding: 80px 0; }
 .page-header h1 { color: var(--white-color); font-size: 2.5rem; }
 
 /* Hero Section */
-#hero { background: linear-gradient(rgba(74, 20, 140, 0.85), rgba(74, 20, 140, 0.85)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop') center/cover no-repeat fixed; min-height: 90vh; display: flex; justify-content: center; align-items: center; text-align: center; color: var(--white-color); padding: 40px 20px; }
-.main-heading { font-size: 3rem; color: var(--white-color); margin-bottom: 10px; }
-.tagline { font-size: 1.5rem; margin-bottom: 30px; letter-spacing: 1px; }
+#hero { background: linear-gradient(rgba(74, 20, 140, 0.85), rgba(74, 20, 140, 0.85)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop') center/cover no-repeat fixed; min-height: 90vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; }
+
+/* ------ THIS IS THE FINAL FIX ------ */
+#hero h1.main-heading {
+    font-size: 2.8rem; /* Slightly adjusted for mobile */
+    color: var(--white-color);
+    font-weight: 800; /* Extra Bold */
+    margin-bottom: 10px;
+    /* A very strong shadow to create a "glow" or "outline" effect */
+    text-shadow: 0 0 8px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.7);
+}
+
+#hero p.tagline {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+/* ------ END OF FIX ------ */
+
+
 .cta-box { background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.3); backdrop-filter: blur(8px); display: inline-block; }
 .offer-badge { background: var(--secondary-color); color: var(--white-color); padding: 8px 20px; border-radius: 50px; font-weight: 600; font-size: 1rem; display: inline-block; margin-bottom: 15px; }
 .admissions-open { font-size: 2rem; color: var(--white-color); margin-bottom: 25px; }
@@ -164,7 +184,9 @@ footer p { margin: 5px 0; }
     .main-nav { display: none; }
     .hamburger-menu { display: block; }
     section { padding: 60px 0; }
-    .page-header h1, .main-heading { font-size: 2rem; }
+    .page-header h1 { font-size: 2rem; }
+    #hero h1.main-heading { font-size: 2.2rem; } /* Adjust font size for mobile */
+    #hero p.tagline { font-size: 1.3rem; }
     #hero { background-attachment: scroll; }
     .university-courses-grid { grid-template-columns: 1fr; }
     .contact-details { flex-direction: column; align-items: center; }
