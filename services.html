@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Mitra Services | एक्सपर्ट कंप्यूटर इंस्टिट्यूट</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="preloader"><div class="loader-icon"></div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <header>
         <div class="container">
             <a href="index.html" class="logo">एक्सपर्ट कंप्यूटर</a>
@@ -27,7 +27,6 @@
             <button class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></button>
         </div>
     </header>
-
     <div class="mobile-nav" id="mobile-nav">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
@@ -35,38 +34,30 @@
         <a href="university.html">University</a>
         <a href="contact.html">Contact</a>
     </div>
-
-    <section class="page-header">
-        <h1>सरकारी और ई-मित्र सेवाएं</h1>
-    </section>
-
+    <section class="page-header"><h1 class="animate-on-scroll fade-in-up">सरकारी और ई-मित्र सेवाएं</h1></section>
     <section id="services">
         <div class="container">
             <div class="grid-layout-small">
-                <div class="service-item animate-on-scroll"><i class="fas fa-file-alt"></i><span>भत्ता फॉर्म</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-id-card"></i><span>पैन कार्ड</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-address-book"></i><span>राशन कार्ड</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-print"></i><span>आधार प्रिंट</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-camera"></i><span>अर्जन फोटो</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-baby-carriage"></i><span>जन्म / मृत्यु प्रमाण पत्र</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-users"></i><span>पेंशन फॉर्म</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-bolt"></i><span>बिजली-पानी बिल</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-users-cog"></i><span>जन आधार</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-map-marked-alt"></i><span>जमाबंदी</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-home"></i><span>मूल निवास</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-stamp"></i><span>जाति प्रमाण पत्र</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-file-signature"></i><span>EWS</span></div>
-                <div class="service-item animate-on-scroll"><i class="fas fa-user-shield"></i><span>पुलिस सत्यापन</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.05s;"><i class="fas fa-file-alt"></i><span>भत्ता फॉर्म</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.1s;"><i class="fas fa-id-card"></i><span>पैन कार्ड</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.15s;"><i class="fas fa-address-book"></i><span>राशन कार्ड</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.2s;"><i class="fas fa-print"></i><span>आधार प्रिंट</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.25s;"><i class="fas fa-camera"></i><span>अर्जन फोटो</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.3s;"><i class="fas fa-baby-carriage"></i><span>जन्म / मृत्यु प्रमाण पत्र</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.35s;"><i class="fas fa-users"></i><span>पेंशन फॉर्म</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.4s;"><i class="fas fa-bolt"></i><span>बिजली-पानी बिल</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.45s;"><i class="fas fa-users-cog"></i><span>जन आधार</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.5s;"><i class="fas fa-map-marked-alt"></i><span>जमाबंदी</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.55s;"><i class="fas fa-home"></i><span>मूल निवास</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.6s;"><i class="fas fa-stamp"></i><span>जाति प्रमाण पत्र</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.65s;"><i class="fas fa-file-signature"></i><span>EWS</span></div>
+                <div class="service-item animate-on-scroll zoom-in" style="transition-delay: 0.7s;"><i class="fas fa-user-shield"></i><span>पुलिस सत्यापन</span></div>
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="container text-center">
-            <p>© 2025 Expert Computer Institute. All Rights Reserved.</p>
-        </div>
+        <div class="container text-center"><p>© 2025 Expert Computer Institute. All Rights Reserved.</p></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
