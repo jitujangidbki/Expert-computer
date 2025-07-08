@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | एक्सपर्ट कंप्यूटर इंस्टिट्यूट</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="preloader"><div class="loader-icon"></div></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <header>
         <div class="container">
             <a href="index.html" class="logo">एक्सपर्ट कंप्यूटर</a>
@@ -27,7 +27,6 @@
             <button class="hamburger-menu" id="hamburger-menu"><i class="fas fa-bars"></i></button>
         </div>
     </header>
-
     <div class="mobile-nav" id="mobile-nav">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
@@ -35,15 +34,11 @@
         <a href="university.html">University</a>
         <a href="contact.html" class="active">Contact</a>
     </div>
-
-    <section class="page-header">
-        <h1>हमसे संपर्क करें</h1>
-    </section>
-
+    <section class="page-header"><h1 class="animate-on-scroll fade-in-up">हमसे संपर्क करें</h1></section>
     <section id="contact">
         <div class="container text-center">
             <div class="contact-details">
-                <div class="contact-card animate-on-scroll">
+                <div class="contact-card animate-on-scroll fade-in-up" style="transition-delay: 0.2s;">
                     <i class="fas fa-phone-alt"></i>
                     <h3>मोबाइल</h3>
                     <p>
@@ -51,7 +46,7 @@
                         <a href="tel:9636243703">9636243703</a>
                     </p>
                 </div>
-                <div class="contact-card animate-on-scroll">
+                <div class="contact-card animate-on-scroll fade-in-up" style="transition-delay: 0.4s;">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>पता</h3>
                     <p>
@@ -65,13 +60,9 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="container text-center">
-            <p>© 2025 Expert Computer Institute. All Rights Reserved.</p>
-        </div>
+        <div class="container text-center"><p>© 2025 Expert Computer Institute. All Rights Reserved.</p></div>
     </footer>
-
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
